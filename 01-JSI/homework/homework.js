@@ -18,7 +18,6 @@ const nuevaMultiplicacion = 10 * 4 === 40;
 // Resuelve el siguiente problema matemático:
 const nuevoModulo = 21 % 5 === 1;
 
-
 // En los próximos 22 problemas, deberás completar la función.
 // Todo tu código irá dentro de las llaves de la función.
 // Asegúrate que usas "return" cuando se te pida.
@@ -29,7 +28,7 @@ function resta(y, x) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
   var resta1 = y - x;
-  return resta1
+  return resta1;
 }
 
 function sonIguales(x, y) {
@@ -38,10 +37,9 @@ function sonIguales(x, y) {
   // Tu código:
   // return x === y = true/false
   if (x === y) {
-    return true
-  }
-  else {
-    return false
+    return true;
+  } else {
+    return false;
   }
 }
 
@@ -49,9 +47,9 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  var lengthStr1 = str1.length
-  var lengthStr2 = str2.length
-  return lengthStr1 === lengthStr2
+  var lengthStr1 = str1.length;
+  var lengthStr2 = str2.length;
+  return lengthStr1 === lengthStr2;
 }
 
 function menosQueNoventa(num) {
@@ -59,10 +57,9 @@ function menosQueNoventa(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (num < 90) {
-    return true
-  }
-  else {
-    return false
+    return true;
+  } else {
+    return false;
   }
 }
 
@@ -71,10 +68,9 @@ function esImpar(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (num % 2) {
-    return true
-  }
-  else {
-    return false
+    return true;
+  } else {
+    return false;
   }
 }
 
@@ -82,82 +78,78 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // Ojo: No es raiz cuadrada!
   // Tu código:
-  return (num * num)
+  return num * num;
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
   var a = Math.pow(num, exponent);
-  return a
+  return a;
 }
 
 function esPositivo(numero) {
-  //La función va a recibir un entero. Devuelve como resultado una cadena de texto que indica si el número es positivo o negativo. 
+  //La función va a recibir un entero. Devuelve como resultado una cadena de texto que indica si el número es positivo o negativo.
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  var a = "Es positivo"
-  var b = "Es negativo"
+  var a = "Es positivo";
+  var b = "Es negativo";
   if (numero < 0) {
-    return b
+    return b;
+  } else if (numero > 0) {
+    return a;
+  } else {
+    return false;
   }
-  else if (numero > 0) {
-    return a
-  }
-  else {
-    return false
-  }
-
 }
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  var a = nombre + " " + apellido
-  return a
+  var a = nombre + " " + apellido;
+  return a;
 }
 
 function retornarPerimetro(lado) {
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   // Tu código:
-  var a = (lado * 4)
-  return a
+  var a = lado * 4;
+  return a;
 }
 
 function deEuroAdolar(euro) {
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   // Tu código:
-  var a = (euro * 1.20)
-  return a
+  var a = euro * 1.2;
+  return a;
 }
 
-
 function esVocal(letra) {
-  //Escribe una función que reciba una letra y, si es una vocal, muestre el mensaje “Es vocal”. 
-  //Verificar si el usuario ingresó un string de más de un carácter y, en ese caso, informarle 
+  //Escribe una función que reciba una letra y, si es una vocal, muestre el mensaje “Es vocal”.
+  //Verificar si el usuario ingresó un string de más de un carácter y, en ese caso, informarle
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Tu código:
   if (letra.length > 1) {
-    return "Dato incorrecto"
+    return "Dato incorrecto";
   }
   switch (letra) {
     case "a":
-      return "Es vocal"
+      return "Es vocal";
       break;
     case "e":
-      return "Es vocal"
+      return "Es vocal";
       break;
     case "i":
-      return "Es vocal"
+      return "Es vocal";
       break;
     case "o":
-      return "Es vocal"
+      return "Es vocal";
       break;
     case "u":
-      return "Es vocal"
+      return "Es vocal";
       break;
   }
 }
@@ -168,13 +160,12 @@ function obtenerMayor(x, y) {
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
   if (x < y) {
-    return y
-  }
-  else if (x > y) {
-    return x
-  }
-  else (x === y); {
-    return x
+    return y;
+  } else if (x > y) {
+    return x;
+  } else x === y;
+  {
+    return x;
   }
 }
 /*
@@ -199,21 +190,20 @@ function colors(color) {
   // Tu código:
   switch (color) {
     case "blue":
-      return "This is blue"
+      return "This is blue";
       break;
     case "red":
-      return "This is red"
+      return "This is red";
       break;
     case "green":
-      return "This is green"
+      return "This is green";
       break;
     case "orange":
-      return "This is orange"
+      return "This is orange";
       break;
     default:
-      return "Color not found"
+      return "Color not found";
       break;
-
   }
 }
 
@@ -222,10 +212,9 @@ function esDiezOCinco(numero) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (numero === 10 || numero === 5) {
-    return true
-  }
-  else {
-    return false
+    return true;
+  } else {
+    return false;
   }
 }
 
@@ -233,14 +222,10 @@ function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (numero < 50) {
-    return true
-  }
-  else if (numero > 20) {
-    return true
-  }
-  else {
-    return false
+  if (numero < 50 && numero > 20) {
+    return true;
+  } else {
+    return false;
   }
 }
 
@@ -250,21 +235,19 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-  // Tu código: 
-  for (let i = 2; i < numero; i++) {
-    if (numero % i === 1) {
-      return true
-    }
-    else {
-      return false
-    }
+  // Tu código:
 
+  if (numero === 0 || numero === 1) {
+    return false;
   }
 
+  for (let i = 2; i < numero; i++) {
+    if (numero % i === 0) {
+      return false;
+    }
+  }
 
-
-
-
+  return true;
 }
 
 function doWhile(numero) {
@@ -272,12 +255,14 @@ function doWhile(numero) {
   //Retornar el valor final.
   //Pueden usar un while o un bucle do ... while (Investigarlo si quieren hacerlo de la segunda forma)
   // Tu código:
-  while (numero + 5) {
-
+  let count = 0;
+  while (count < 8) {
+    numero = numero + 5;
+    count++;
   }
+
+  return numero;
 }
-
-
 
 // No modificar nada debajo de esta línea
 // --------------------------------
@@ -306,5 +291,5 @@ module.exports = {
   esDiezOCinco,
   estaEnRango,
   esPrimo,
-  doWhile
+  doWhile,
 };
