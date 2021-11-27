@@ -1,0 +1,13 @@
+<Style>
+        html {background-color: rgb(116, 107, 107);}
+        h1 {color: red;}
+        img {width: 400px;
+        height: 250;}
+        #ThirdDiv {width: 500px;
+        height: 600px;}
+        #ThirdDiv {background-color: green;}
+        #spanid {font-size: 25px;} 
+        #spanid {margin: 50px;}
+        #ThirdDiv {padding: 50px;}
+        #ThirdDiv {border: 10px solid black;}
+    </Style>

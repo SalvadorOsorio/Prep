@@ -3,21 +3,26 @@
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
-
+  const num = [1, 2, 3];
+  return (num[num.length - 1]);
 }
 
 function incrementarPorUno(array) {
   // "array" debe ser una arreglo de números enteros
   // Aumenta cada número por 1 y devuelve el array
   // Tu código:
-
+  const array = [1, 2, 3, 4]
+for (let i = 0; i < array.length; i++){array[i] = array[i] + 1}
+return array
 }
 
 function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
-
+const array = ["hola", "chau", "cuerda"];
+array.push("elemento")
+return array
 }
 
 function dePalabrasAFrase(palabras) {
@@ -33,7 +38,7 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
-
+const array 
 }
 
 function promedioResultadosTest(resultadosTest) {
@@ -52,12 +57,12 @@ function numeroMasGrande(numeros) {
 
 function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
-  // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
+  // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Tu código:
 
 }
 
-function cuentoElementos(arreglo){
+function cuentoElementos(arreglo) {
   // Realiza una función que retorne la cantidad de los elementos del arreglo que sean mayores a 18.
   // Tu código:
 
@@ -67,8 +72,8 @@ function todosIguales(arreglo) {
   // Escriba la función todosIguales, si todos los elementos de un arreglo son iguales
   // retornar true, caso contrario retornar false.
   // Tu código:
-  
-} 
+
+}
 
 function mesesDelAño(array) {
   // Dado un array que contiene algunos meses del año desordenados, recorrer el array buscando los meses de 
@@ -97,7 +102,7 @@ function continueStatement(numero) {
   // y se continua con la siguiente iteración
   // Pista: usá el statement 'continue'
   // Tu código:
-  
+
 }
 
 function crearGato(nombre, edad) {
@@ -122,7 +127,7 @@ function invocarMetodo(objeto, metodo) {
   // Invoca ese método
   // Nada necesita ser devuelto ("returned")
   // Tu código:
-  
+
 }
 
 function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {

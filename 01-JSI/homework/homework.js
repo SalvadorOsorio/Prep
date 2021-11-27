@@ -1,22 +1,22 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta correcta
 
 // Crea una variable "string", puede contener lo que quieras:
-const nuevaString = null;
+const nuevaString = "string";
 
 // Crea una variable numérica, puede ser cualquier número:
-const nuevoNum = null;
+const nuevoNum = 1;
 
 // Crea una variable booleana:
-const nuevoBool = null;
+const nuevoBool = true;
 
 // Resuelve el siguiente problema matemático:
-const nuevaResta = 10 - null === 5;
+const nuevaResta = 10 - 5 === 5;
 
 // Resuelve el siguiente problema matemático:
-const nuevaMultiplicacion = 10 * null === 40 ;
+const nuevaMultiplicacion = 10 * 4 === 40;
 
 // Resuelve el siguiente problema matemático:
-const nuevoModulo = 21 % 5 === null;
+const nuevoModulo = 21 % 5 === 1;
 
 
 // En los próximos 22 problemas, deberás completar la función.
@@ -25,51 +25,71 @@ const nuevoModulo = 21 % 5 === null;
 // Pista: "console.log()" NO fucionará.
 // No cambies los nombres de las funciones.
 
-function resta(x, y) {
+function resta(y, x) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-
+  var resta1 = y - x;
+  return resta1
 }
 
 function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-
+  // return x === y = true/false
+  if (x === y) {
+    return true
+  }
+  else {
+    return false
+  }
 }
 
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-
+  var lengthStr1 = str1.length
+  var lengthStr2 = str2.length
+  return lengthStr1 === lengthStr2
 }
 
 function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
-
+  if (num < 90) {
+    return true
+  }
+  else {
+    return false
+  }
 }
 
 function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-
+  if (num % 2) {
+    return true
+  }
+  else {
+    return false
+  }
 }
 
 function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // Ojo: No es raiz cuadrada!
   // Tu código:
-
+  return (num * num)
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-
+  var a = Math.pow(num, exponent);
+  return a
 }
 
 function esPositivo(numero) {
@@ -77,6 +97,17 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
+  var a = "Es positivo"
+  var b = "Es negativo"
+  if (numero < 0) {
+    return b
+  }
+  else if (numero > 0) {
+    return a
+  }
+  else {
+    return false
+  }
 
 }
 
@@ -84,29 +115,51 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-
+  var a = nombre + " " + apellido
+  return a
 }
 
-function retornarPerimetro(lado){
+function retornarPerimetro(lado) {
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   // Tu código:
-
+  var a = (lado * 4)
+  return a
 }
 
-function deEuroAdolar(euro){
+function deEuroAdolar(euro) {
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   // Tu código:
-  
+  var a = (euro * 1.20)
+  return a
 }
 
 
-function esVocal(letra){
+function esVocal(letra) {
   //Escribe una función que reciba una letra y, si es una vocal, muestre el mensaje “Es vocal”. 
   //Verificar si el usuario ingresó un string de más de un carácter y, en ese caso, informarle 
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Tu código:
-
+  if (letra.length > 1) {
+    return "Dato incorrecto"
+  }
+  switch (letra) {
+    case "a":
+      return "Es vocal"
+      break;
+    case "e":
+      return "Es vocal"
+      break;
+    case "i":
+      return "Es vocal"
+      break;
+    case "o":
+      return "Es vocal"
+      break;
+    case "u":
+      return "Es vocal"
+      break;
+  }
 }
 
 function obtenerMayor(x, y) {
@@ -114,9 +167,16 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
-
+  if (x < y) {
+    return y
+  }
+  else if (x > y) {
+    return x
+  }
+  else (x === y); {
+    return x
+  }
 }
-
 /*
 Para implementar la siguiente función vamos a utilizar una estructura de control de flujo nueva, 
 llamada switch, si no estás familiarizado con esta estructura, es un buen escenario para hacerle 
@@ -137,21 +197,51 @@ function colors(color) {
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
   // Tu código:
+  switch (color) {
+    case "blue":
+      return "This is blue"
+      break;
+    case "red":
+      return "This is red"
+      break;
+    case "green":
+      return "This is green"
+      break;
+    case "orange":
+      return "This is orange"
+      break;
+    default:
+      return "Color not found"
+      break;
 
+  }
 }
 
 function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
-
+  if (numero === 10 || numero === 5) {
+    return true
+  }
+  else {
+    return false
+  }
 }
 
 function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
-
+  if (numero < 50) {
+    return true
+  }
+  else if (numero > 20) {
+    return true
+  }
+  else {
+    return false
+  }
 }
 
 function esPrimo(numero) {
@@ -160,7 +250,20 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-  // Tu código:
+  // Tu código: 
+  for (let i = 2; i < numero; i++) {
+    if (numero % i === 1) {
+      return true
+    }
+    else {
+      return false
+    }
+
+  }
+
+
+
+
 
 }
 
@@ -169,7 +272,9 @@ function doWhile(numero) {
   //Retornar el valor final.
   //Pueden usar un while o un bucle do ... while (Investigarlo si quieren hacerlo de la segunda forma)
   // Tu código:
-  
+  while (numero + 5) {
+
+  }
 }
 
 
