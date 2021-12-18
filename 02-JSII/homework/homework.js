@@ -11,17 +11,17 @@ function incrementarPorUno(array) {
   // Aumenta cada número por 1 y devuelve el array
   // Tu código:
   for (let i = 0; i < array.length; i++) {
-    array[i] = array[i] + 1
+    array[i] = array[i] + 1;
   }
-  return array
+  return array;
 }
 
 function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
-  array.push(elemento)
-  return array
+  array.push(elemento);
+  return array;
 }
 
 function dePalabrasAFrase(palabras) {
@@ -30,16 +30,15 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-  let palabra = ""
+  let palabra = "";
   for (let i = 0; i < palabras.length; i++) {
     if (i === palabras.length - 1) {
-      palabra = palabra + palabras[i]
-    }
-    else {
-      palabra = palabra + palabras[i] + " "
+      palabra = palabra + palabras[i];
+    } else {
+      palabra = palabra + palabras[i] + " ";
     }
   }
-  return palabra
+  return palabra;
 }
 
 function arrayContiene(array, elemento) {
@@ -47,11 +46,11 @@ function arrayContiene(array, elemento) {
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
   for (let i = 0; i < array.length; i++) {
-    if (elemento === array[i]) { return true; }
+    if (elemento === array[i]) {
+      return true;
+    }
   }
-  return false
-
-
+  return false;
 }
 
 function promedioResultadosTest(resultadosTest) {
@@ -60,73 +59,86 @@ function promedioResultadosTest(resultadosTest) {
   // Tu código:
   let total = 0;
   for (let i = 0; i < resultadosTest.length; i++) {
-    (total = total + resultadosTest[i])
+    total = total + resultadosTest[i];
   }
   const promedio = total / resultadosTest.length;
-  return promedio
+  return promedio;
 }
+
+// Entendiendo el problema primero sin código
+// [3, 7, 12]
+// Humano:
+
+// Problamente en código equivale a un if con alguna condición:
+// - Tengo que saber cuándo un número es mayor a otro.
+
+// Esto es una variable
+// - Tengo solo que recordar el último más alto para poder compararlo con el siguiente.
+
+// Probablemente esto implique un for loop:
+// - Tengo que revisar todos lo números.
+// - Tengo que ser capaz de adaptarme a cualquier largo de array.
 
 function numeroMasGrande(numeros) {
   // "numeros" debe ser un array de enteros
   // Devuelve el número más grande
   // Tu código:
-  let mayor = 0
-const numeros = [8, 10, 4, 6, 7, 9]
-for (let i = 0; i < numeros.length; i++) {
-(mayor = numeros[i] + mayor) 
+  // [3, 7, 12, 4]
+  let biggestNumber;
 
-console.log(mayor)
+  for (let i = 0; i < numeros.length; i++) {
+    const numero = numeros[i];
+
+    if (numero > biggestNumber || typeof biggestNumber === "undefined") {
+      biggestNumber = numero;
+    }
   }
-}  
+
+  return biggestNumber;
+}
 
 function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Tu código:
-
 }
 
 function cuentoElementos(arreglo) {
   // Realiza una función que retorne la cantidad de los elementos del arreglo que sean mayores a 18.
   // Tu código:
-
 }
 
 function todosIguales(arreglo) {
   // Escriba la función todosIguales, si todos los elementos de un arreglo son iguales
   // retornar true, caso contrario retornar false.
   // Tu código:
-
 }
 
 function mesesDelAño(array) {
-  // Dado un array que contiene algunos meses del año desordenados, recorrer el array buscando los meses de 
+  // Dado un array que contiene algunos meses del año desordenados, recorrer el array buscando los meses de
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   // Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
-
 }
 
 function breakStatement(numero) {
   // Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
-  // Guardar cada nuevo valor en un array. 
+  // Guardar cada nuevo valor en un array.
   // Devolver el array
-  // Si en algún momento el valor de la suma y la cantidad de iteraciones coinciden, debe interrumpirse la ejecución y 
+  // Si en algún momento el valor de la suma y la cantidad de iteraciones coinciden, debe interrumpirse la ejecución y
   // devolver: "Se interrumpió la ejecución"
   // Pista: usá el statement 'break'
   // Tu código:
-
 }
 
 function continueStatement(numero) {
   // Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
-  // Guardar cada nuevo valor en un array.    
+  // Guardar cada nuevo valor en un array.
   // Devolver el array
   // Cuando el número de iteraciones alcance el valor 5, no se agrega ese número al array
   // y se continua con la siguiente iteración
   // Pista: usá el statement 'continue'
   // Tu código:
-
 }
 
 function crearGato(nombre, edad) {
@@ -135,7 +147,6 @@ function crearGato(nombre, edad) {
   // Agrega un método (funcion) llamado "meow" que devuelva el string "Meow!"
   // Devuelve el objeto
   // Tu código:
-
 }
 
 function agregarPropiedad(objeto, property) {
@@ -143,7 +154,6 @@ function agregarPropiedad(objeto, property) {
   // Devuelve el objeto
   // NOTA: El nombre de la propiedad no es "propiedad", el nombre es el valor del argumento llamado "property" (una cadena/string)
   // Tu código:
-
 }
 
 function invocarMetodo(objeto, metodo) {
@@ -151,18 +161,16 @@ function invocarMetodo(objeto, metodo) {
   // Invoca ese método
   // Nada necesita ser devuelto ("returned")
   // Tu código:
-
 }
 
 function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
   // "objetoMisterioso" tiene una propiedad llamada "numeroMisterioso"
   // Multiplica el numeroMisterioso por 5 y devuelve el producto
   // Tu código:
-
 }
 
 function eliminarPropiedad(objeto, unaPropiedad) {
-  // Elimina la propiedad de objeto cuyo nombre está pasado por el parametro unaPropiedad 
+  // Elimina la propiedad de objeto cuyo nombre está pasado por el parametro unaPropiedad
   // tip: tenes que usar bracket notation
   // Devuelve el objeto
   // Tu código:
@@ -172,14 +180,12 @@ function nuevoUsuario(nombre, email, password) {
   // Crea un nuevo objeto con las propiedades coincidiendo con los argumentos que se pasan a la función
   // Devuelve el objeto
   // Tu código:
-
 }
 
 function tieneEmail(usuario) {
   // Devuelve "true" si el usuario tiene un valor definido para la propiedad "email"
   // De lo contratio, devuelve "false"
   // Tu código:
-
 }
 
 function tienePropiedad(objeto, propiedad) {
@@ -187,14 +193,12 @@ function tienePropiedad(objeto, propiedad) {
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
   // Tu código:
-
 }
 
 function actualizarPassword(usuario, nuevaPassword) {
   // Reemplaza la contraseña existente en el objeto "usuario" con el valor de "nuevaPassword"
   // Devuelve el objeto
   // Tu código:
-
 }
 
 function agregarAmigo(usuario, nuevoAmigo) {
@@ -202,7 +206,6 @@ function agregarAmigo(usuario, nuevoAmigo) {
   // Agrega "nuevoAmigo" al final de ese array
   // Devuelve el objeto "usuario"
   // Tu código:
-
 }
 
 function sumarLikesDeUsuario(usuario) {
@@ -212,7 +215,6 @@ function sumarLikesDeUsuario(usuario) {
   // Suma todos los likes de todos los objetos "post"
   // Devuelve la suma
   // Tu código:
-
 }
 
 // No modificar nada debajo de esta línea
@@ -242,5 +244,5 @@ module.exports = {
   tienePropiedad,
   actualizarPassword,
   agregarAmigo,
-  sumarLikesDeUsuario
+  sumarLikesDeUsuario,
 };
